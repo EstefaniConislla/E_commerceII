@@ -6,9 +6,8 @@ const Home = () => {
         <>
             <NavBar/>
             <Carousel/>
-            
         </>
     )
 }
 
-export default Home
+export default Home;

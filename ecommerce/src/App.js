@@ -1,13 +1,14 @@
+/* eslint-disable no-unused-vars */
 import {
   BrowserRouter,
   Routes,
   Route,
   Link
 } from "react-router-dom";
-import Home from './Views/Home'
-import Login from './Views/Login'
-import Products from './Views/Products'
-import Register from './Views/Register'
+import Home from './Views/Home';
+import Login from './Views/Login';
+import Products from './Views/Products';
+import Register from './Views/Register';
 
 
 const App = () =>{
@@ -15,7 +16,7 @@ const App = () =>{
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/Home" element={<Home />} />
           <Route path="/Products" element={<Products />} />
           <Route path="/Login" element={<Login />} />
           <Route path="/Register" element={<Register />} />

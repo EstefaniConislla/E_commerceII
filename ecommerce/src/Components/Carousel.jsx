@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import './Carousel.css';
 
 const Carousel = () => {
   const [category, setCategory] = useState([]);
@@ -18,24 +19,15 @@ const Carousel = () => {
         data-bs-ride="carousel"
       >
         <div className="carousel-inner">
-          {/* <div class="carousel-item active">
-            <img src="..." class="d-block w-100" alt="..." />
-          </div>
-          <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="..." />
-          </div>
-          <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="..." />
-          </div> */}
           {category &&
             category.map((item, index) =>
               index === 0 ? (
                 <div className="carousel-item active" key={index}>
-                  <img src={item.image} className="d-block w-60" alt="..." />
+                  <img src={item.image} className="d-block w-50" alt="..." />
                 </div>
               ) : (
                 <div className="carousel-item" key={index}>
-                  <img src={item.image} className="d-block w-60" alt="..." />
+                  <img src={item.image} className="d-block w-50" alt="..." />
                 </div>
               )
             )}
