@@ -1,4 +1,5 @@
 import NavBar from "./NavBar";
+import './Card.css';
 import { Container, Row } from "react-bootstrap";
 
 const Card = ({ product }) => {
