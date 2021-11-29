@@ -1,4 +1,5 @@
-import './NavBar.css';
+import CartWidget from "./CartWidget";
+import "./NavBar.css";
 
 const NavBar = () => {
   return (
@@ -31,6 +32,7 @@ const NavBar = () => {
                   Products
                 </a>
               </li>
+
               <li className="nav-item">
                 <a href="/Login" className="nav-link active">
                   Login
@@ -42,17 +44,7 @@ const NavBar = () => {
                 </a>
               </li>
             </ul>
-            <form className="d-flex">
-              <input
-                className="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button className="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
+            <CartWidget />
           </div>
         </div>
       </nav>

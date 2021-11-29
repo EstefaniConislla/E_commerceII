@@ -1,7 +1,7 @@
 import { useEffect, useState} from "react";
-import Card from "../Components/Card";
+import ItemList from "../Components/ItemList";
 
-const Products = () => {
+const ItemListContainer = () => {
     const [product, setProduct] = useState([])
 
     useEffect(() => {
@@ -13,9 +13,9 @@ const Products = () => {
 
     return (
         <div>
-            <Card product={product}/>
+            <ItemList product={product}/>
         </div>
     )
 }
 
-export default Products
+export default ItemListContainer;

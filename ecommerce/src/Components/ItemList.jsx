@@ -1,7 +1,7 @@
 import NavBar from "./NavBar";
-import "./Card.css";
+import "./ItemList.css";
 
-const Card = ({ product }) => {
+const ItemList = ({ product }) => {
   console.log(product);
 
   return (
@@ -15,6 +15,7 @@ const Card = ({ product }) => {
               <div className="card-body">
                 <h5 className="card-title">{item.title}</h5>
                 <p className="card-text">{item.description}</p>
+                <p className="card-price">Price: S/{item.price}</p>
               </div>
             </div>
           ))}
@@ -23,4 +24,4 @@ const Card = ({ product }) => {
   );
 };
 
-export default Card;
+export default ItemList;

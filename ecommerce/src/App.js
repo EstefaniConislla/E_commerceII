@@ -5,25 +5,28 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import NavBar from "./Components/NavBar";
+import { CartProvider } from "./Views/CartContext";
 import Home from './Views/Home';
+import ItemListContainer from "./Views/ItemListContainer";
 import Login from './Views/Login';
-import Products from './Views/Products';
 import Register from './Views/Register';
 
 
 const App = () =>{
   return(
-    <div className="App">
+    <CartProvider>
       <BrowserRouter>
+      <NavBar/>
         <Routes>
           <Route path="" element={<Home />} />
           <Route path="/Home" element={<Home />} />
-          <Route path="/Products" element={<Products />} />
+          <Route path="/Products" element={<ItemListContainer />} />
           <Route path="/Login" element={<Login />} />
           <Route path="/Register" element={<Register />} />
         </Routes>
       </BrowserRouter>
-    </div>
+   </CartProvider>
   )
 }
 
