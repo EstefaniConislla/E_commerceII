@@ -1,3 +1,8 @@
-.card{
-    margin:20px;
+.CardContainer {
+    margin:25px;
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(20em,1fr));
+    column-gap: 8.5em;
+    justify-items:center;
+    row-gap: 4em;
 }

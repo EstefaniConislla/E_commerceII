@@ -12,7 +12,7 @@ const Carousel = () => {
   }, []);
 
   return (
-    <div>
+    <div className="ContainerCarousel">
       <div
         id="carouselExampleControls"
         className="carousel slide"
@@ -23,11 +23,11 @@ const Carousel = () => {
             category.map((item, index) =>
               index === 0 ? (
                 <div className="carousel-item active" key={index}>
-                  <img src={item.image} className="d-block w-50" alt="..." />
+                  <img src={item.image} className="d-block w-60" alt="..." />
                 </div>
               ) : (
                 <div className="carousel-item" key={index}>
-                  <img src={item.image} className="d-block w-50" alt="..." />
+                  <img src={item.image} className="d-block w-60" alt="..." />
                 </div>
               )
             )}

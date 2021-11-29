@@ -1,5 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+.ContainerCarousel{
+    display:flex;
+    justify-content: center;
+}
+/* 
 #carouselExampleControls{
     margin-top: 30px;
     width: 60%;
     height: 60%;
-}
+} */
