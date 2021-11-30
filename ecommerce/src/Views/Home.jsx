@@ -1,10 +1,8 @@
-import Carousel from "../Components/Carousel"
-import NavBar from "../Components/NavBar"
+import Carousel from "../Components/Carousel";
 
 const Home = () => {
     return (
         <>
-            <NavBar/>
             <Carousel/>
         </>
     )
