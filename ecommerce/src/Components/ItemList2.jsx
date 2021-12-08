@@ -24,8 +24,10 @@ const ItemList2 = () => {
     
     return (
 
-        <div className="modal-body">
-            <img src={product.image} className="card-img-top" alt="..." />
+        <div className="modal-body" style={{"display" : "flex", "justify-content": "center", "flex-direction" : "column", "align-items" : "center" }}>
+            <img src={product.image} className="card-img-top" style={{"width" : "300px"}}
+            alt="..." />
+            <br />
             <h5 className="card-title">{product.title}</h5>
             <p className="card-text">{product.description}</p>
             <p className="card-price">Price: S/{product.price}</p>
