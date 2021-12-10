@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.desktopContainer {
+    display: none;
+}
+
+.loginContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logoImg {
+    width: 80%;
+    padding-top: 12%;
+    padding-bottom: 0.5rem;
+}
+
+.logo,
+.loginTitle,
+.formLogin,
+.loginRegisterLink {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginH2 {
+    color: #616161;
+    font-size: 1.2rem;
+    padding: 0.4rem;
+    margin: 0.25em 0.2em;
+    text-align: center;
+}
+
+.loginH1 {
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 0.4rem;
+    margin: 0.25em 0.2em;
+    text-align: center;
+}
+
+.inputList {
+    width: 80%;
+}
+
+.inputList .formInput:focus {
+    border: 2px solid #FFACB7;
+    outline: none;
+}
+
+.inputList .inputGmail {
+    background-image: url(../../assets/envelope-regular.svg);
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    background-position-y: center;
+    background-position-x: 5px;
+    padding: 1rem 1rem 1rem 30px;
+}
+
+.inputList .inputPassword {
+    background-image: url(../../assets/lock-solid.svg);
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    background-position-y: center;
+    background-position-x: 5px;
+    padding: 1rem 1rem 1rem 30px;
+}
+
+.formInput {
+    width: 100%;
+    height: 6vh;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-radius: 10px;
+    border: none;
+    color: #616161;
+    background-color: #F3EFF6;
+}
+
+.loginButton {
+    width: 50%;
+}
+
+.loginBtn {
+    width: 100%;
+    background-color: #6886C5;
+    color: white;
+    padding: 0.5rem;
+    margin: 0.25em 0.2em;
+    border-radius: 50px;
+    border: none;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.loginRegisterLink {
+    font-size: 0.9rem;
+    margin: 0.5rem;
+    font-weight: 500;
+}
+
+span a {
+    color: #FFACB7;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media (min-width: 600px) {
+    .loginSection {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+    }
+    .desktopContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f3eff6;
+        height: 100vh;
+    }
+    .viewDesktop {
+        width: 100%;
+    }
+    .containerLogoDesktop {
+        width: 80%;
+    }
+    .logoImg {
+        width: 50%;
+        padding: 0;
+    }
+    .loginContainer {
+        font-size: 2rem;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+    }
+    .loginH2 {
+        font-size: 1.5rem;
+        padding: 0.5rem 1rem;
+    }
+    .loginH1 {
+        font-size: 1.1rem;
+    }
+}
